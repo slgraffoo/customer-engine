@@ -19,7 +19,7 @@ Internal data storage.
 # Installation 
 
 * Install npm and node.js.
-* Checkou/clone code.
+* Checkout/clone code.
 * From within the checkout, run `DEBUG=customerEngine:* npm start`
 
 # Usage 
