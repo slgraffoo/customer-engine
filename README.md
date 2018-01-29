@@ -18,11 +18,19 @@ Internal data storage.
 
 # Installation 
 
-* Install npm and node.js.
-* Checkout/clone code.
-* From within the checkout, run `DEBUG=customerEngine:* npm start`
+Instructions are for *nix OSes.
+
+* Install npm and node.js
+* Have curl installed for the test commands
+* Checkout/clone the repository
+* cd to the checkout directory
+* run `npm install`
+* run `DEBUG=customerEngine:* npm start`
 
 # Usage 
+
+Loading http://localhost:3000 will get you a default page for the app. It is not needed for the test commands below. 
+
 
 ## GET all customers
 curl http://localhost:3000/app/v1/customers
