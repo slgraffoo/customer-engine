@@ -26,6 +26,31 @@
   "paths": {
     "/customer": {
 	  "get": {
+        "tags": [
+          "customer"
+        ],
+        "summary": "Get all customers",
+        "description": "Returns all customers",
+        "operationId": "getAllCustomers",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Customer"
+            }
+          },
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Customer not found"
+          }
+        }
 	  },
       "post": {
         "tags": [
@@ -47,7 +72,9 @@
             "description": "Customer object that needs to be added",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/Customer"
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Customer"
             }
           }
         ],
@@ -80,7 +107,9 @@
             "description": "Customer object that needs to be added",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/Customer"
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Customer"
             }
           }
         ],
